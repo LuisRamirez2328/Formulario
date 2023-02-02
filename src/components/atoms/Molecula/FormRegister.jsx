@@ -1,17 +1,8 @@
-import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+
 
 function FormRegister() {
-    const navigate =useNavigate()
-      
-    const form = useRef();
-
-  const handlerClick = (e)=>{
-  e.preventDefault();
-  
- const newForm =new FormData(form.current)
+    
  
-}
    
     return ( 
         <form >
