@@ -6,7 +6,7 @@ function FormLogin() {
       <div className='Form'>
      <form>
    
-      <img src={Login} width="200" height="200"></img>
+      <img src={Login} ></img>
       <div className='Form2'>
       <input type="text" placeholder='Usuario'></input>
       
