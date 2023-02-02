@@ -13,10 +13,11 @@ html{
   
 }
 .Form{
-   width: 450px;
+   width: 400px;
    min-width: 400px;
    border-radius: 10px;
-   background-color: aqua;
+   background-color: rgb(185, 243, 243);
+   margin: auto;
 
 }
 .Form img{

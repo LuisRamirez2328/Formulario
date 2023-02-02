@@ -5,14 +5,27 @@
     align-items: center;
     margin:auto;
      color: black;
+     
     }
     
 .Tipos{
 display: flex;
 flex-direction: column;
+margin: 5px 5px 5px;
 }
 .Onclick{
     font-size: 16px;
     color:ghostwhite;
     background-color: red;
+    margin: 5px 5px 5px;
+}
+.Claves{
+display: flex;
+flex-direction: column;
+margin: 5px 5px 5px 5px;
+}
+.Fechas{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px 5px;
 }

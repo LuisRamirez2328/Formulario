@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import {Link} from 'react-router-dom';
 import "../../../assets/styles/css/Transporte.css"
 import Autobus from '../../../assets/styles/imgs/Autobus.png';
 function Transporte() {
@@ -39,7 +40,10 @@ function Transporte() {
           <div className="Form">
            <img src={Autobus} width="200" height="200"></img>
             <div className="Claves">
+            
                 <input type="text" name="id" placeholder="Clave Autobus"></input>
+                </div>
+                <div>
                 <input type="text" name="placa" placeholder="Placa Autobus"></input>
             </div>
             <div className="Fechas">
@@ -47,7 +51,10 @@ function Transporte() {
                     type="text"
                     name="asientos"
                     placeholder="Numero de asientos"
+
                 ></input>
+                </div>
+                <div>
                 <input type="date" name="fecha" placeholder="Fecha de alta"></input>
             </div>
             <div className="Tipos">
@@ -55,19 +62,18 @@ function Transporte() {
                     <option >Lujo</option>
                     <option >Turismo</option>
                 </select>
-                <input
-                    type="text"
-                    name="nombre"
-                    placeholder="Nombre del Chofer"
-                ></input>
-                <input
-                    type="text"
-                    name="licencia"
-                    placeholder="Numero de licencia"
-                ></input>
+                </div>
+                <div>
+                <input type="text"name="nombre"placeholder="Nombre del Chofer"></input>
+                </div>
+                <div>
+                <input type="text"name="licencia"placeholder="Numero de licencia"></input>
             </div>
+           <div>
             <button className="Onclick" onClick={handlerClick}> Alta de autobus</button>
             </div>
+            </div>
+            
         </form>
     );
 }
