@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import "../../../assets/styles/css/Transporte.css"
+import Autobus from '../../../assets/styles/imgs/Autobus.png';
 function Transporte() {
     const navigate = useNavigate();
 
@@ -34,11 +36,13 @@ function Transporte() {
 
     return (
         <form ref={form}>
-            <div>
+          <div className="Form">
+           <img src={Autobus} width="200" height="200"></img>
+            <div className="Claves">
                 <input type="text" name="id" placeholder="Clave Autobus"></input>
                 <input type="text" name="placa" placeholder="Placa Autobus"></input>
             </div>
-            <div>
+            <div className="Fechas">
                 <input
                     type="text"
                     name="asientos"
@@ -46,7 +50,7 @@ function Transporte() {
                 ></input>
                 <input type="date" name="fecha" placeholder="Fecha de alta"></input>
             </div>
-            <div>
+            <div className="Tipos">
                 <select name="tipo" id="">
                     <option >Lujo</option>
                     <option >Turismo</option>
@@ -62,7 +66,8 @@ function Transporte() {
                     placeholder="Numero de licencia"
                 ></input>
             </div>
-            <button onClick={handlerClick}> Alta de autobus</button>
+            <button className="Onclick" onClick={handlerClick}> Alta de autobus</button>
+            </div>
         </form>
     );
 }
