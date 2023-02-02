@@ -1,25 +1,24 @@
+import {Link} from 'react-router-dom';
+import Login from '../../../assets/styles/imgs/Login.png';
+
 function FormLogin() {
-    return ( 
-        <form >
-        <div>
-        <label className="caption"htmlFor="name"> Nombre</label>
-        <input  type="text"  id="name" name="name"></input>
+    return (
+        <div class="login">
+            <img src={Login} alt="Logo" width="100" height="100"/>
+         <form action="">
+          <input type="text" placeholder="Nombre del usuario"></input>
+          <input type="text" placeholder="Contraseña"></input>
+          <div>
+          <Link to="/autobus">Inicia sesion</Link>
+          </div>
+          <div>
+          <Link to="//register">Crear usuario</Link>
+          </div>
+          </form>
+         
+
         </div>
-        <div>
-        <label  className="caption"> Usuario
-            <input  type="text" username="username"></input>
-        </label>
-        </div>
-        <div>
-        <label  className="caption"> Contraseña
-            <input type="password" password="password"></input>
-        </label>
-        </div>
-        <div>
- <button >Registro</button>
- </div>
-    </form>
-     );
+      );
 }
 
 export default FormLogin;

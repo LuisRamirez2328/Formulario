@@ -1,10 +1,16 @@
 import { BrowserRouter,Routes, Route } from "react-router-dom";
-import FormLogin from "../Pages/FormLogin";
+import Login from "../Pages/Login";
+import Register from "../Pages/Registre";
+import Alta from "../Pages/Alta";
 function App() {
     return ( 
-<BrowserRouter>
+        <BrowserRouter>
         <Routes>
-        <Route path="/login" element={<FormLogin/>}/>
+            
+               <Route path="/" element={<Login/>}/>
+              <Route path='/register' element={<Register/>}   />
+              <Route path='/autobus' element={<Alta/>}   />
+             
         </Routes>
         </BrowserRouter>
      );
