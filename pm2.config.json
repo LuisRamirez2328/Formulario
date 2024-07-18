@@ -2,8 +2,9 @@
     "apps": [
       {
         "name": "ReactApp",
-        "script": "node_modules/react-scripts/scripts/start.js",
+        "script": "node_modules/vite/bin/vite.js",
         "watch": true
       }
     ]
   }
+  
